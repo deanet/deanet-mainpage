@@ -41,7 +41,7 @@ Rails::Initializer.run do |config|
   # no regular words or you'll be exposed to dictionary attacks.
   config.action_controller.session = {
     :session_key => "_#{app_name}_session",
-    :secret      => 'youneedtochangethistosomethingelsethankyouverymuch'
+    :secret      => 'selamatharilebaranminalaidzinwalfaidzinikhlaskansemuadirimusucikanlahhatimu'
   }
 
   # Use the database for sessions instead of the cookie-based default,
