@@ -1,6 +1,6 @@
 rails --source gems.rubyforge.org
 thoughtbot-factory_girl --source gems.github.com
-thoughtbot-shoulda --source gems.rubyforge.org
-rr --source gems.rubyforge.org
-chrisk-fakeweb --source gems.rubyforge.org
+thoughtbot-shoulda --source gems.github.com
+rr --source gems.github.com
+chrisk-fakeweb --source gems.github.com
 
