@@ -1,4 +1,4 @@
-app_name = "rubyfflow"
+app_name = "rubyflow"
 
 # Be sure to restart your server when you modify this file
 
