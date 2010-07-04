@@ -1,20 +1,22 @@
-body { background-color: #fff; color: #333; }
-
-body, p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size:   13px;
-  line-height: 18px;
-}
 
 pre {
   background-color: #eee;
   padding: 10px;
   font-size: 11px;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-weight: inherit;
+        font-style: inherit;
+        font-size: 100%;
+        font-family: inherit;
+        vertical-align: baseline;
 }
 
 a { color: #000; }
 a:visited { color: #666; }
-a:hover { color: #fff; background-color:#000; }
+//a:hover { color: #fff; background-color:#000; }
 
 .fieldWithErrors {
   padding: 2px;
@@ -72,3 +74,75 @@ div.progressBar div.background {
   width: 0%;
 }
 
+#captcha_display SUP {
+   display: none;
+}
+
+.fieldWithErrors {
+  padding: 2px;
+  background-color: #69b5ff;
+  display: table;
+}
+
+#captcha_display {
+  background-color: #000;
+  color: #fff;
+  font-size: 24px;
+  padding: 12px;
+  width: 400px;
+  height: 24px;
+  border: 1px solid #000;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+blockquote span.a, blockquote span.b {
+  font-family: helvetica, arial; font-size: 50px; color: #8ac;
+}
+
+
+blockquote.yellow { background-color: #fe7; }
+blockquote.yellow span.a, blockquote.yellow span.b { color: #dc5; }
+
+blockquote.green { background-color: #df7; }
+blockquote.green span.a, blockquote.green span.b { color: #cd5; }
+
+blockquote.comment { background-color: #f0f0f0; }
+blockquote.comment span.a, blockquote.comment span.b { color: #ddd; }
+
+blockquote.usercomment { background-color: #def; }
+blockquote.usercomment span.a, blockquote.usercomment span.b { color: #8ac; }
+
+.message {
+  background-color: #eee;
+  padding: 8px;
+  border: 1px solid #999;
+  margin-bottom: 14px;
+}
+
+.date {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.date {
+  font-size: 14px;
+  color: #999;
+}
+
+.ptitle {
+	display: inline;
+	font-weight: bold;
+	margin-right: 4px;
+	font-size: 1.1em;
+	background-color: #eee;
+	padding: 2px 4px;
+	margin-left: -4px;
+}
+
+.ptitle A {
+	color: #26b !important;
+	text-decoration: none;
+	font-wieght: bold;
+}

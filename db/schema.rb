@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 17) do
+ActiveRecord::Schema.define(:version => 15) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
@@ -35,14 +35,13 @@ ActiveRecord::Schema.define(:version => 17) do
     t.text     "content"
     t.text     "metadata"
     t.string   "name"
-    t.text     "tags",               :limit => 255
+    t.text     "tags",           :limit => 255
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "byline"
-    t.integer  "comments_count",                    :default => 0
-    t.integer  "stars_count",                       :default => 0
-    t.integer  "spam_reports_count",                :default => 0
+    t.integer  "comments_count",                :default => 0
+    t.integer  "stars_count",                   :default => 0
   end
 
   create_table "open_id_authentication_associations", :force => true do |t|
@@ -62,13 +61,6 @@ ActiveRecord::Schema.define(:version => 17) do
   create_table "open_id_authentication_settings", :force => true do |t|
     t.string "setting"
     t.binary "value"
-  end
-
-  create_table "spam_reports", :force => true do |t|
-    t.integer  "item_id"
-    t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
   create_table "stars", :force => true do |t|
