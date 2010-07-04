@@ -1,4 +1,4 @@
-rails --source gems.rubyforge.org
+rails --version 2.3.8 --source gems.rubyforge.org
 thoughtbot-factory_girl --source gems.github.com
 thoughtbot-shoulda --source gems.github.com
 rr --source gems.github.com
