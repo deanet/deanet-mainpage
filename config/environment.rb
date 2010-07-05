@@ -64,7 +64,7 @@ Rails::Initializer.run do |config|
 	require  'lib/domainredirect.rb'
 
   # This is how you use and configure Rack::DomainRedirect middleware
-  config.middleware.use Rack::DomainRedirect, ['beta.deanet.web.id', '192.168.0.177']
+  config.use Rack::DomainRedirect, ['beta.deanet.web.id', '192.168.0.177']
 
 
 end
