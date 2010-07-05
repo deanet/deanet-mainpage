@@ -15,7 +15,7 @@ uses_javascript: false
 # Set to 0 or omit to always allow editing of items by its owner
 edit_expiration_in_minutes: 60
 
- ga: UA-12495571-6
+ga: UA-12495571-6
 sidebar: |-
           <h2>What is this ?</h2>
           <ul>
