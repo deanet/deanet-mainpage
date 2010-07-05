@@ -4,4 +4,4 @@ thoughtbot-factory_girl --source gems.github.com
 thoughtbot-shoulda --source gems.github.com
 rr --source gems.github.com
 chrisk-fakeweb --source gems.github.com
-
+rake

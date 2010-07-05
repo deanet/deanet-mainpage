@@ -1,5 +1,3 @@
-
-
 require  'domainredirect.rb'
 
 # This is how you use and configure Rack::DomainRedirect middleware
