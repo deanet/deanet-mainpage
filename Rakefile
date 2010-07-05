@@ -2,7 +2,7 @@
 # for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
 
 
-require  'lib/domainredirect.rb'
+require  'domainredirect.rb'
 
 # This is how you use and configure Rack::DomainRedirect middleware
 use Rack::DomainRedirect, ['beta.deanet.web.id', '192.168.0.177']
