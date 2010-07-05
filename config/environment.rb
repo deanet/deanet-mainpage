@@ -60,6 +60,13 @@ Rails::Initializer.run do |config|
   # Make Active Record use UTC-base instead of local time
   # config.active_record.default_timezone = :utc
   config.gem 'thoughtbot-factory_girl', :lib => 'factory_girl', :source => 'http://gems.github.com'
+
+	require  'lib/domainredirect.rb'
+
+  # This is how you use and configure Rack::DomainRedirect middleware
+  config.middleware.use Rack::DomainRedirect, ['beta.deanet.web.id', '192.168.0.177']
+
+
 end
 
 APP_CONFIG = YAML::load(File.open("#{RAILS_ROOT}/config/#{app_name}.yml")).symbolize_keys
