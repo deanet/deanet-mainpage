@@ -4,7 +4,7 @@ app_name = "rubyflow"
 
 # Uncomment below to force Rails into production mode when
 # you don't control web/app server and can't set it the proper way
-# ENV['RAILS_ENV'] ||= 'production'
+ENV['RAILS_ENV'] ||= 'production'
 
 # Specifies gem version of Rails to use when vendor/rails is not present
 RAILS_GEM_VERSION = '2.1.0' unless defined? RAILS_GEM_VERSION
@@ -64,7 +64,7 @@ Rails::Initializer.run do |config|
 	require  'lib/domainredirect.rb'
 
   # This is how you use and configure Rack::DomainRedirect middleware
-  config.use Rack::DomainRedirect, ['beta.deanet.web.id', '192.168.0.177']
+  config.middleware.use Rack::DomainRedirect, ['beta.deanet.web.id', '192.168.0.177']
 
 
 end
