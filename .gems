@@ -5,3 +5,4 @@ thoughtbot-shoulda --source gems.github.com
 rr --source gems.github.com
 chrisk-fakeweb --source gems.github.com
 rake
+rack
