@@ -7,7 +7,7 @@ app_name = "rubyflow"
 #ENV['RAILS_ENV'] ||= 'production'
 
 # Specifies gem version of Rails to use when vendor/rails is not present
-RAILS_GEM_VERSION = '2.3.2' unless defined? RAILS_GEM_VERSION
+RAILS_GEM_VERSION = '2.1.0' unless defined? RAILS_GEM_VERSION
 
 # Bootstrap the Rails environment, frameworks, and default configuration
 require File.join(File.dirname(__FILE__), 'boot')
@@ -64,7 +64,7 @@ Rails::Initializer.run do |config|
 	require  'lib/domainredirect.rb'
 
   # This is how you use and configure Rack::DomainRedirect middleware
-  config.middleware.use Rack::DomainRedirect, ['beta.deanet.web.id', '192.168.0.177']
+ # config.middleware.use Rack::DomainRedirect, ['beta.deanet.web.id', '192.168.0.177']
 
 
 end
