@@ -1,3 +1,17 @@
+class ApplicationController
+  before_filter :ensure_domain
+
+  TheDomain = 'http://beta.deanet.web.id'
+
+  def ensure_domain
+    if request.env['HTTP_HOST'] != TheDomain
+      redirect_to TheDomain
+    end
+  end
+end
+
+
+
 ActionController::Routing::Routes.draw do |map|
   map.root :controller => 'items'
 
