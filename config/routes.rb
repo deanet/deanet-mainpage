@@ -1,7 +1,7 @@
- class ApplicationController
+class ApplicationController
   before_filter :ensure_domain
 
-  TheDomain = 'beta.deanet.web.id'
+ TheDomain = 'beta.deanet.web.id'
 
   def ensure_domain
     if request.env['HTTP_HOST'] != TheDomain
@@ -9,6 +9,7 @@
 	end
    end
 end
+
 
 ActionController::Routing::Routes.draw do |map|
  map.root :controller => 'items'
