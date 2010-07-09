@@ -14,7 +14,8 @@ body {
   background-color: white;
   background-position: center top;
   /*:image url(/images/layout/background.jpg) */
-  font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+//  font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+font-family: "Helvetica Neue", "DejaVu Sans", "Verdana";
   font-size: 80%;
   color: black; }
 
