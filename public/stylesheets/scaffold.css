@@ -98,7 +98,7 @@ div.progressBar div.background {
 
 blockquote span.a, blockquote span.b {
 //  font-family: helvetica, arial; 
-font-family: "Helvetica Neue", "DejaVu Sans", "Verdana";
+font-family: Helvetica, "DejaVu Sans", "Verdana";
 
 font-size: 50px; color: #8ac;
 }
