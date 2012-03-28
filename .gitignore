@@ -1,13 +1,1 @@
-.DS_Store
-log/*.log
-log/*.pid
-#config/development.sphinx.conf
-tmp/**/*
-config/database.yml
-db/*.sqlite3
-coverage
-doc/plugins/*
-doc/*
-#db/sphinx/development/*
-Capfile
-backupdb
+.gitignore
