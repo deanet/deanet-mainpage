@@ -1,8 +1,0 @@
-<p>
-<% words = %w{wedangjahe segogoreng miegodog kopijahe wedangronde bakmijowo sateklathak tengkleng janganbrongkos gedanggoreng iwakteri aremarem bakmigodog lemper cenil bakwan bakwankawi pempek lupis telokaspo gaplek tiwul legendri nogosari lemet jahesusu lelemangut osengoseng capcay ketan jadahtempe jagungbakar esbakar kopijoss kopiareng rujak lotes segopethik segogurih segoberkat besek} %>
-<% post_words = %w{?enak} %>
-<div id="captcha_display"><% random_word = words[rand(words.size)] + post_words[rand(post_words.size)]; random_word.each_byte do |char| %><%= char.chr.upcase %><%= %Q{<sup>#{char.chr.upcase}</sup>} if rand(3) == 0 %><!-- <%= Time.now.to_i %> --><% end %></div><br />
-<label for="captcha">Enter The Word Displayed In <span style="background-color: #000; color: #fff">WHITE ON BLACK</span> Above</label><br />
-<%= text_field_tag "captcha" %>
-<%= hidden_field_tag "captcha_guide", Digest::SHA1.hexdigest(random_word.upcase)[0..5] %>
-</p>
